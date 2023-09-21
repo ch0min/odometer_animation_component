@@ -1,0 +1,2 @@
+# odometer_animation_component
+Odometer Animation Component Functionality
