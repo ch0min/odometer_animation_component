@@ -6,16 +6,17 @@ import Digit from "./Digit";
 const Odometer = () => {
     const [number, setNumber] = useState(1234)   // Set users initial points - can be set to 0
 
-    // const handleChange = () => {  // Button demonstration
-    //     setNumber(5107);    // Set users new points, change to useEffect instead of button
-    // };
+    const handleChange = () => {  // Button demonstration
+        // setNumber(5107);    // Set users new points, change to useEffect instead of button
+        setNumber(Math.floor(Math.random() * 10000 % 10000))
+    };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {    // Can be removed, just there to show the initial "Points" the user has.
-            setNumber(5107)
-        }, 1000);
-        return () => clearTimeout()
-    }, []);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {    // Can be removed, just there to show the initial "Points" the user has.
+    //         setNumber(5107)
+    //     }, 1000);
+    //     return () => clearTimeout()
+    // }, []);
 
 
     return (
@@ -27,7 +28,7 @@ const Odometer = () => {
             </View>
 
             {/*Button to demonstrate the animation effect*/}
-        {/*<Button title="Animate" onPress={handleChange}/>*/}
+        <Button title="Animate" onPress={handleChange}/>
         </SafeAreaView>
     );
 }
