@@ -15,7 +15,7 @@ const Odometer = () => {
     //     const timer = setTimeout(() => {    // Can be removed, just there to show the initial "Points" the user has.
     //         setNumber(5107)
     //     }, 1000);
-    //     return () => clearTimeout()
+    //     return () => clearTimeout(timer)
     // }, []);
 
 
